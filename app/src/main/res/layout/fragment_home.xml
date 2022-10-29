@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        style="@style/AppTheme.AppBarLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="?attr/actionBarSize"
+                app:logo="@drawable/ic_search"
+                app:logoDescription="logo"
+                style="@style/Theme.People.NoActionBar"
+                android:background="@drawable/circular_search"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp">
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/searchView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:iconifiedByDefault="false"
+                    app:queryBackground="@android:color/transparent"
+                    app:searchIcon="@null"
+                    app:theme="@style/Theme.People.SearchView"
+                    android:inputType="textVisiblePassword|textNoSuggestions"
+                    app:queryHint="Введите имя, тег, почту..."
+                    android:layout_marginEnd="16dp"/>
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <TextView
+                android:id="@+id/cancelSearchTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/purple_500"
+                android:textSize="14sp"
+                android:layout_marginEnd="28dp"
+                android:visibility="gone"
+                android:text="Отмена"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="scrollable"
+        style="@style/TabLayout"
+        app:tabTextAppearance="@style/TabTextStyle"
+        app:layout_constraintTop_toBottomOf="@id/appBarLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.tabs.TabItem
+            android:tag="allTabItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Все" />
+
+        <com.google.android.material.tabs.TabItem
+            android:tag="DesignersTabItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Designers"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:tag="AnalystsTabItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Analysts"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:tag="ManagersTabItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Managers"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:tag="iosTabItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="iOS"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:tag="androidTabItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Android"/>
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tabLayout"
+        tools:itemCount="7"
+        tools:listitem="@layout/item_list_hide_people" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

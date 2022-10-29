@@ -1,0 +1,104 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.People" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+<!--        <item name="colorSecondary">@color/teal_200</item>-->
+        <item name="colorSecondary">@color/purple_500</item>
+        <item name="colorSecondaryVariant">@color/purple_500</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/white</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:navigationBarColor">#50FFFFFF</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarLayout" parent="Widget.MaterialComponents.AppBarLayout.Surface">
+        <item name="background">@color/white</item>
+    </style>
+
+    <style name="DrawerIcon" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/white</item>
+    </style>
+
+    <style name="Theme.People.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="TabTextStyle">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="TabLayout">
+        <item name="tabSelectedTextColor">@color/black</item>
+        <item name="tabIndicatorColor">@color/purple_500</item>
+    </style>
+
+    <!--  BottomSheetDialog  -->
+    <style name="BottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
+
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bottom_sheet_shape</item>
+    </style>
+
+    <!--  PhoneBottomSheetDialog  -->
+    <style name="PhoneBottomSheetDialogTheme" parent="Theme.AppCompat.Light">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:colorBackground">#99000000</item>
+    </style>
+
+    <style name="Theme.People.SearchView">
+        <item name="android:textSize">@dimen/searchViewTextSize</item>
+<!--        <item name="android:textColorPrimary">@color/black</item>-->
+<!--        <item name="android:textColorHint">@color/black</item>-->
+    </style>
+
+    <!--  AppCompatImageButton  -->
+    <style name="Theme.People.AppCompatImageButton" parent="Widget.AppCompat.ImageButton">
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="tint">@color/black</item>
+    </style>
+
+    <!--  AppCompatImageButton.Back -->
+    <style name="Back" parent="Theme.People.AppCompatImageButton">
+        <item name="android:src">@drawable/ic_vector</item>
+    </style>
+
+    <!--  AppCompatImageView  -->
+    <style name="Theme.People.AppCompatImageView" parent="Widget.AppCompat.ImageButton">
+        <item name="tint">@color/black</item>
+    </style>
+
+    <!--  AppCompatImageView.Star  -->
+    <style name="Star" parent="Theme.People.AppCompatImageButton">
+        <item name="android:src">@drawable/ic_star</item>
+    </style>
+
+    <!--  AppCompatImageView.Phone  -->
+    <style name="Phone" parent="Theme.People.AppCompatImageButton">
+        <item name="android:src">@drawable/ic_phone</item>
+    </style>
+
+    <!--  ConstraintLayout  -->
+    <style name="Theme.People.ConstraintLayout" />
+
+    <!--  ConstraintLayout.Header  -->
+    <style name="Header" parent="Theme.People.ConstraintLayout">
+        <item name="android:background">#F7F7F8</item>
+    </style>
+
+    <style name="Theme.People.BaseText">
+        <item name="android:color">#050510</item>
+    </style>
+</resources>
