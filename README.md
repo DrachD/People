@@ -4,6 +4,7 @@ Components:
 
 - Kotlin
 - MVVM
+- Single Activity
 - Navigation
 - Gson
 - Retrofit2
