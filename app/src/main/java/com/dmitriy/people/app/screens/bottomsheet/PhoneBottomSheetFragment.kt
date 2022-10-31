@@ -1,11 +1,11 @@
-package com.dmitriy.people
+package com.dmitriy.people.app.screens.bottomsheet
 
-import android.app.Activity
 import android.app.Dialog
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.dmitriy.people.R
 import com.dmitriy.people.databinding.FragmentPhoneBottomSheetBinding
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment

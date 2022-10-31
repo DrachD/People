@@ -1,4 +1,4 @@
-package com.dmitriy.people
+package com.dmitriy.people.sources
 
 import com.dmitriy.people.app.Const.BASE_URL
 import com.dmitriy.people.sources.users.UsersApi

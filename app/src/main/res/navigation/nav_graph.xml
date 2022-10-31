@@ -20,12 +20,12 @@
     </fragment>
     <fragment
         android:id="@+id/criticalErrorFragment"
-        android:name="com.dmitriy.people.CriticalErrorFragment"
+        android:name="com.dmitriy.people.app.screens.criticalerror.CriticalErrorFragment"
         android:label="fragment_critical_error"
         tools:layout="@layout/fragment_critical_error" />
     <fragment
         android:id="@+id/detailsFragment"
-        android:name="com.dmitriy.people.DetailsFragment"
+        android:name="com.dmitriy.people.app.screens.details.DetailsFragment"
         android:label="fragment_account_details"
         tools:layout="@layout/fragment_account_details" >
         <argument

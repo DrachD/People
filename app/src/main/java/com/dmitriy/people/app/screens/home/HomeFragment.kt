@@ -2,33 +2,23 @@ package com.dmitriy.people
 
 import android.graphics.Color
 import android.os.Bundle
-import android.os.Parcelable
 import android.util.Log
 import android.view.*
 import android.widget.Toast
 import androidx.appcompat.widget.SearchView
 import androidx.appcompat.widget.Toolbar
-import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.navOptions
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.dmitriy.people.adapter.Months
-import com.dmitriy.people.adapter.PeopleAdapter
-import com.dmitriy.people.app.Singleton
+import com.dmitriy.people.app.adapter.PeopleAdapter
+import com.dmitriy.people.app.model.Months
 import com.dmitriy.people.app.model.users.entities.User
+import com.dmitriy.people.app.screens.bottomsheet.BottomSheetFragment
 import com.dmitriy.people.app.screens.main.SortedType
 import com.dmitriy.people.app.screens.main.UserViewModel
-import com.dmitriy.people.data.Items
-import com.dmitriy.people.databinding.FragmentBottomSheetBinding
 import com.dmitriy.people.databinding.FragmentHomeBinding
 import com.google.android.material.tabs.TabLayout
-import kotlinx.parcelize.Parceler
-import kotlinx.parcelize.Parcelize
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -245,6 +235,9 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                     Log.d("logs", "status: " + response.status.toString())
                     Log.d("logs", "exception: " + response.exception.toString())
                 }
+                else -> {
+                    NetworkStatus.status = NetworkStatus.Failure
+                }
             }
         }
     }
@@ -272,14 +265,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
     private fun onPeopleDetailsButtonPressed(user: User) {
         val action = HomeFragmentDirections.actionHomeFragmentToDetailsFragment(user)
-        findNavController().navigate(
-            action
-//            navOptions {
-//                popUpTo(R.id.homeFragment) {
-//                    inclusive = true
-//                }
-//            }
-        )
+        findNavController().navigate(action)
     }
 
     private fun getToolbarLogoIcon(toolbar: Toolbar): View? {

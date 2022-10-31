@@ -1,12 +1,12 @@
-package com.dmitriy.people
+package com.dmitriy.people.app.screens.criticalerror
 
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import androidx.fragment.app.Fragment
-import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.navOptions
+import com.dmitriy.people.R
 import com.dmitriy.people.databinding.FragmentCriticalErrorBinding
 
 class CriticalErrorFragment : Fragment(R.layout.fragment_critical_error) {

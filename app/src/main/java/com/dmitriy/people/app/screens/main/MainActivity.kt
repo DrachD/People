@@ -1,12 +1,10 @@
-package com.dmitriy.people
+package com.dmitriy.people.app.screens.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.NavController
-import androidx.navigation.NavHost
-import androidx.navigation.NavHostController
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
+import com.dmitriy.people.R
 import com.dmitriy.people.app.Singleton
 import com.dmitriy.people.databinding.ActivityMainBinding
 

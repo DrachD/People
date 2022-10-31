@@ -1,10 +1,12 @@
-package com.dmitriy.people
+package com.dmitriy.people.app.screens.details
 
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import com.dmitriy.people.app.screens.bottomsheet.PhoneBottomSheetFragment
+import com.dmitriy.people.R
 import com.dmitriy.people.app.model.users.entities.User
 import com.dmitriy.people.databinding.FragmentAccountDetailsBinding
 import com.squareup.picasso.Picasso
@@ -46,7 +48,7 @@ class DetailsFragment : Fragment(R.layout.fragment_account_details) {
     }
 
     private fun onBackButtonPressed() {
-        findNavController().popBackStack(R.id.homeFragment, true)
+        findNavController().popBackStack()
     }
 
     private fun onPhoneBottomSheetButtonPressed() {

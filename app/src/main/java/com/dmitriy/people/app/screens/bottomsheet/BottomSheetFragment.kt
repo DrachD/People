@@ -1,15 +1,12 @@
-package com.dmitriy.people
+package com.dmitriy.people.app.screens.bottomsheet
 
-import android.app.Activity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.lifecycle.ViewModelProvider
+import com.dmitriy.people.R
 import com.dmitriy.people.app.screens.main.SortedType
-import com.dmitriy.people.app.screens.main.UserViewModel
 import com.dmitriy.people.databinding.FragmentBottomSheetBinding
-import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
 class BottomSheetFragment(

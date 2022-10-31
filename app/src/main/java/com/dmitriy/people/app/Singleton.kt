@@ -1,7 +1,6 @@
 package com.dmitriy.people.app
 
 import android.content.Context
-import com.dmitriy.people.NetworkLayer
 import com.dmitriy.people.app.model.users.UsersRepository
 
 object Singleton {

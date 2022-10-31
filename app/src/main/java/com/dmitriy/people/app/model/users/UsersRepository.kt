@@ -1,10 +1,9 @@
 package com.dmitriy.people.app.model.users
 
 import com.dmitriy.people.ApiResponse
-import com.dmitriy.people.NetworkLayer
+import com.dmitriy.people.sources.NetworkLayer
 import com.dmitriy.people.data.Items
 import com.dmitriy.people.sources.users.UsersApi
-import retrofit2.Call
 import retrofit2.Response
 
 class UsersRepository : UsersSource {
