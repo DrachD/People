@@ -9,6 +9,7 @@ Components:
 - Retrofit2
 - Picasso
 - Coroutines
+- LiveData
 
 Screenshots:
 
