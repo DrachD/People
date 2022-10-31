@@ -11,6 +11,7 @@ Components:
 - Picasso
 - Coroutines
 - LiveData
+- viewBinding
 
 Application feature:
 
