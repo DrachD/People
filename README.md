@@ -4,7 +4,11 @@ Components:
 
 - Kotlin
 - MVVM
--
+- Navigation
+- Gson
+- Retrofit2
+- Picasso
+- Coroutines
 
 Screenshots:
 
